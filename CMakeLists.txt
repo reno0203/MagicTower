@@ -20,6 +20,9 @@ set(PROJECT_SOURCES
         src/gui/MainWindow.cpp
         src/gui/MainWindow.h
         src/gui/MainWindow.ui
+        src/gui/MapForm.h
+        src/gui/MapForm.cpp
+        src/gui/MapForm.ui
 )
 
 qt_add_executable(MagicTower
