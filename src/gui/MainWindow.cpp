@@ -1,6 +1,8 @@
 #include "MainWindow.h"
 #include "./ui_MainWindow.h"
 
+#include "TowerConstant.h"
+
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
