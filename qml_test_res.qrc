@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>resources/fonts/SegoeFluentIcons.ttf</file>
+        <file>resources/icon/favicon.ico</file>
+    </qresource>
+</RCC>

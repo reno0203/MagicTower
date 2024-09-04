@@ -21,6 +21,11 @@ qt_add_qml_module(QmlTest
         URI qml_test
         VERSION 1.0
         QML_FILES Main.qml
+        QML_FILES control/IconButton.qml
+        QML_FILES control/TitleBar.qml
+        RESOURCES ../qml_test_res.qrc
+        SOURCES Theme.h Theme.cpp
+        SOURCES Singleton.h
 )
 
 set_target_properties(QmlTest PROPERTIES
