@@ -7,6 +7,18 @@
 #include <QQmlEngine>
 #include <QJSEngine>
 
+namespace ThemeType
+{
+    Q_NAMESPACE
+    enum ThemeTypeEnum
+    {
+        Light = 1,
+        Dark = 2
+    };
+    Q_ENUM_NS(ThemeTypeEnum)
+    QML_NAMED_ELEMENT(ThemeType)
+}
+
 /**
  * 系统主题
  */

@@ -10,8 +10,13 @@ Rectangle {
     property int btnPreferredHeight: 32
 
     property var themeTypeListener : function() {
-        console.log("dd")
-        Theme.type = 1
+        if(Theme.type === ThemeType.Light) {
+            Theme.type = ThemeType.Dark
+            color = "#202020"
+        } else {
+            Theme.type = ThemeType.Light
+            color = "#f3f3f3"
+        }
     }
 
     RowLayout {
@@ -26,7 +31,7 @@ Rectangle {
             iconSource: "0xe830"
             Layout.preferredWidth: btnPreferredWidth
             Layout.preferredHeight: btnPreferredHeight
-            onClicked: () => themeTypeListener(backBtn)
+            // onClicked: () => themeTypeListener(backBtn)
         }
 
         IconButton {

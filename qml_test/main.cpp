@@ -16,6 +16,8 @@ int main(int argc, char *argv[])
                                        return instance;
                                    });
 
+    qmlRegisterUncreatableMetaObject(ThemeType::staticMetaObject, "MagicTower", 1, 0, "ThemeType", "Access to enums & flags only");
+
     QObject::connect(&engine,
         &QQmlApplicationEngine::objectCreationFailed,
         &app,
